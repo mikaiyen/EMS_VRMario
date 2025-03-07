@@ -31,6 +31,20 @@
 
 ---
 
+## 執行方式
+
+1. **專案下載 / Clone：**  
+   ```bash
+   git clone https://github.com/mikaiyen/EMS_VRMario.git
+   ```
+    **開啟 Unity：**  
+   - 使用Unity 2022.3.22f1 新增專案。 
+   - 將本專案全部內容複製貼上到Assets資料夾
+2. **雲端下載**  
+    詳見最後的雲端連結下載
+
+---
+
 ## 主要特色與功能
 
 ### Task 1: Walk & Run & Stair
