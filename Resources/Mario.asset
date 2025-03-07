@@ -1,0 +1,758 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bc08d176f66394bbb27891baf3129a, type: 3}
+  m_Name: Mario
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 71738b82-bc26-4850-8c6a-926668eadb63
+    BasePortName: Root
+    TargetPortName: Input
+    TargetNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+  - BaseNodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+  - BaseNodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 1
+    TargetPortName: Input State
+    TargetNodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+  - BaseNodeGUID: fac72d02-1aca-4a5f-9b31-6a58bde28870
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+  - BaseNodeGUID: 0cc1caf6-b5b0-4bfc-b9fa-e4b0adc4f285
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+  - BaseNodeGUID: fcf6bc24-4b3d-45b3-985f-99a08a32cb74
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+  - BaseNodeGUID: d3eeeaa1-17c7-41a7-a62a-311f59e37127
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+  - BaseNodeGUID: f5093f18-3df5-49d2-9ede-a0accb885abc
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 976d09ab-45e7-4aa4-bad3-fae73cefd8b6
+  - BaseNodeGUID: 44e534e6-0966-4ce2-ba4b-5c28b75d2ed7
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+  - BaseNodeGUID: c9736a25-c64d-4bbc-99a5-4f7c4a657715
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+  - BaseNodeGUID: c99331ee-7e84-40ec-b296-bd08db6bc28a
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 4799c4be-c300-466a-b7ea-ecb471527884
+  - BaseNodeGUID: 4553508c-392d-4f44-8af5-c6a77742df52
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 4799c4be-c300-466a-b7ea-ecb471527884
+  - BaseNodeGUID: 8a02e58a-9331-417d-bfa7-5e2b79be7087
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+  - BaseNodeGUID: b38a9577-e02a-4816-8d10-dba20b5a94cf
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Condition 2
+    TargetPortName: Input State
+    TargetNodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+  - BaseNodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Condition 3
+    TargetPortName: Input State
+    TargetNodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+  - BaseNodeGUID: 1943af09-9b8a-447f-a09f-71851a067b79
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+  - BaseNodeGUID: 2add0472-79c3-4f29-bc55-2975db7b1cd4
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+  - BaseNodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 4
+    TargetPortName: Input State
+    TargetNodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+  - BaseNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    BasePortName: Option 2
+    TargetPortName: Input State
+    TargetNodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+  - BaseNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    BasePortName: Condition 2
+    TargetPortName: Input State
+    TargetNodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+  - BaseNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    BasePortName: Condition 3
+    TargetPortName: Input State
+    TargetNodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+  - BaseNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    BasePortName: Condition 4
+    TargetPortName: Input State
+    TargetNodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 5
+    TargetPortName: Input State
+    TargetNodeGUID: 976d09ab-45e7-4aa4-bad3-fae73cefd8b6
+  - BaseNodeGUID: 079b3ab0-f046-4b80-a1a7-453ea8af2cc3
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 43425238-7666-4367-bb0c-d548f0d64aae
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 6
+    TargetPortName: Input State
+    TargetNodeGUID: 43425238-7666-4367-bb0c-d548f0d64aae
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 7
+    TargetPortName: Input State
+    TargetNodeGUID: 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 8
+    TargetPortName: Input State
+    TargetNodeGUID: 4799c4be-c300-466a-b7ea-ecb471527884
+  - BaseNodeGUID: b4876f7b-91e0-4350-9036-b37223d7c2f8
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 66f3634a-8bcc-43c8-8eab-0e43317588e5
+  - BaseNodeGUID: d0750d48-9565-422a-9ec6-4d26cedf5c7b
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 66f3634a-8bcc-43c8-8eab-0e43317588e5
+  - BaseNodeGUID: ddf80db7-19c9-4a91-a32c-8cc3b9fab7b9
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 95ab522f-3f8a-445b-a989-80b23a398a2a
+  - BaseNodeGUID: fdb3dfe2-b618-4bcd-945b-72eade930b7d
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 95ab522f-3f8a-445b-a989-80b23a398a2a
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 9
+    TargetPortName: Input State
+    TargetNodeGUID: 66f3634a-8bcc-43c8-8eab-0e43317588e5
+  - BaseNodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    BasePortName: Option 10
+    TargetPortName: Input State
+    TargetNodeGUID: 95ab522f-3f8a-445b-a989-80b23a398a2a
+  - BaseNodeGUID: 976d09ab-45e7-4aa4-bad3-fae73cefd8b6
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: 43425238-7666-4367-bb0c-d548f0d64aae
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: 4799c4be-c300-466a-b7ea-ecb471527884
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: 66f3634a-8bcc-43c8-8eab-0e43317588e5
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: 95ab522f-3f8a-445b-a989-80b23a398a2a
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+  - BaseNodeGUID: ebfd1fb7-893a-4eaa-8a0f-8a785cbf47cd
+    BasePortName: Option 1
+    TargetPortName: Input State
+    TargetNodeGUID: 15234e92-9b89-44fc-92bb-41a2d0d6c5d2
+  - BaseNodeGUID: c5826cdc-2d5b-4542-8c30-bf04d0ac9361
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: ebfd1fb7-893a-4eaa-8a0f-8a785cbf47cd
+  - BaseNodeGUID: bd43a593-6d32-4c3a-a01f-24cc5d0cdb5f
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 15234e92-9b89-44fc-92bb-41a2d0d6c5d2
+  - BaseNodeGUID: 15234e92-9b89-44fc-92bb-41a2d0d6c5d2
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: ef54d36d-baff-4844-986f-4a734c6d4ff2
+  - BaseNodeGUID: 3e7a53eb-4f1b-40e6-b0fa-1db7831a3426
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 276813aa-9964-4a59-8070-15bc2f2da09c
+  - BaseNodeGUID: 276813aa-9964-4a59-8070-15bc2f2da09c
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 570cdaba-1d6e-42f8-8835-2fb1610ad091
+  - BaseNodeGUID: 0edb5a9a-e8f9-4788-8929-8e4a871d0485
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: b1e9de47-c2ce-4908-9304-39a39a1a0374
+  - BaseNodeGUID: 15f5ce9b-812b-495a-9e58-1b035b7b038e
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 0edb5a9a-e8f9-4788-8929-8e4a871d0485
+  - BaseNodeGUID: 570cdaba-1d6e-42f8-8835-2fb1610ad091
+    BasePortName: Option 1
+    TargetPortName: Input State
+    TargetNodeGUID: 0edb5a9a-e8f9-4788-8929-8e4a871d0485
+  - BaseNodeGUID: 6b03be95-4dad-442c-8122-d0d8ec7de8d9
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: c5826cdc-2d5b-4542-8c30-bf04d0ac9361
+  - BaseNodeGUID: 41dc7370-2070-4907-b4ab-999cabed878c
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 12c3f577-814e-4741-aecd-164157fa0808
+  - BaseNodeGUID: 2b88a6d6-91fb-4217-bbf2-8298cb927f0e
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 260984e5-ea27-46c7-844d-c63ff0864b83
+  - BaseNodeGUID: 260984e5-ea27-46c7-844d-c63ff0864b83
+    BasePortName: Option 1
+    TargetPortName: Input State
+    TargetNodeGUID: 41dc7370-2070-4907-b4ab-999cabed878c
+  - BaseNodeGUID: 589c83b9-0d57-4daa-a5fd-8a450bfdcc93
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 41dc7370-2070-4907-b4ab-999cabed878c
+  - BaseNodeGUID: 6b05ed07-e33e-4245-b4fb-f94b50079be7
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 2b88a6d6-91fb-4217-bbf2-8298cb927f0e
+  - BaseNodeGUID: a365a471-3769-4c35-ac4f-2668bf326c5e
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 32871025-298b-4f83-98fa-32afee47b379
+  - BaseNodeGUID: 32871025-298b-4f83-98fa-32afee47b379
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 958e60e2-6054-4073-b5dc-799286d976ca
+  - BaseNodeGUID: 958e60e2-6054-4073-b5dc-799286d976ca
+    BasePortName: Option 1
+    TargetPortName: Input State
+    TargetNodeGUID: 276813aa-9964-4a59-8070-15bc2f2da09c
+  - BaseNodeGUID: 958e60e2-6054-4073-b5dc-799286d976ca
+    BasePortName: Option 2
+    TargetPortName: Input State
+    TargetNodeGUID: 2b88a6d6-91fb-4217-bbf2-8298cb927f0e
+  - BaseNodeGUID: 57f10fdf-2f9f-4f41-a330-a235f1e898bb
+    BasePortName: Output State
+    TargetPortName: Input
+    TargetNodeGUID: 260984e5-ea27-46c7-844d-c63ff0864b83
+  - BaseNodeGUID: 033f3226-ec72-4d0f-b6f2-843af5320a89
+    BasePortName: output
+    TargetPortName: Condition 2
+    TargetNodeGUID: 57f10fdf-2f9f-4f41-a330-a235f1e898bb
+  - BaseNodeGUID: bfcac869-b514-4ba8-93d2-0f8466127146
+    BasePortName: output
+    TargetPortName: Condition 3
+    TargetNodeGUID: 57f10fdf-2f9f-4f41-a330-a235f1e898bb
+  - BaseNodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    BasePortName: Option 6
+    TargetPortName: Input State
+    TargetNodeGUID: c5826cdc-2d5b-4542-8c30-bf04d0ac9361
+  LocomotionNodeData:
+  - NodeGUID: 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+    Position: {x: 2691, y: 38}
+    LocomotionStateName: Idle
+  - NodeGUID: c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    Position: {x: 1407, y: -22}
+    LocomotionStateName: Forwarding
+  - NodeGUID: ef54d36d-baff-4844-986f-4a734c6d4ff2
+    Position: {x: 2142, y: 3251}
+    LocomotionStateName: Idle
+  - NodeGUID: ebfd1fb7-893a-4eaa-8a0f-8a785cbf47cd
+    Position: {x: 1431, y: 3251}
+    LocomotionStateName: TestingState
+  - NodeGUID: 12c3f577-814e-4741-aecd-164157fa0808
+    Position: {x: 2742, y: 2053}
+    LocomotionStateName: Idle
+  - NodeGUID: 260984e5-ea27-46c7-844d-c63ff0864b83
+    Position: {x: 2031, y: 2052}
+    LocomotionStateName: Jump
+  - NodeGUID: b1e9de47-c2ce-4908-9304-39a39a1a0374
+    Position: {x: 2741, y: 1670}
+    LocomotionStateName: Idle
+  - NodeGUID: 958e60e2-6054-4073-b5dc-799286d976ca
+    Position: {x: 1383, y: 1542}
+    LocomotionStateName: PreTeleport
+  - NodeGUID: 570cdaba-1d6e-42f8-8835-2fb1610ad091
+    Position: {x: 2031, y: 1670}
+    LocomotionStateName: Teleport
+  - NodeGUID: 8fd76b22-26cd-4b5e-b269-dbf575bf3054
+    Position: {x: 241, y: 200}
+    LocomotionStateName: Idle
+  TransitionNodeData:
+  - NodeGUID: 2f83ce10-9758-4386-8c16-0d5b52518726
+    Position: {x: 1044, y: 349}
+    Operator: 0
+  - NodeGUID: 34873f3f-3551-4669-9a21-af7186f3d39f
+    Position: {x: 1044, y: -370}
+    Operator: 0
+  - NodeGUID: f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+    Position: {x: 1044, y: 669}
+    Operator: 0
+  - NodeGUID: 976d09ab-45e7-4aa4-bad3-fae73cefd8b6
+    Position: {x: 2143, y: -330}
+    Operator: 0
+  - NodeGUID: 43425238-7666-4367-bb0c-d548f0d64aae
+    Position: {x: 2143, y: -143}
+    Operator: 0
+  - NodeGUID: 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+    Position: {x: 2143, y: 134}
+    Operator: 0
+  - NodeGUID: 4799c4be-c300-466a-b7ea-ecb471527884
+    Position: {x: 2143, y: 448}
+    Operator: 0
+  - NodeGUID: 66f3634a-8bcc-43c8-8eab-0e43317588e5
+    Position: {x: 2143, y: 787}
+    Operator: 0
+  - NodeGUID: 95ab522f-3f8a-445b-a989-80b23a398a2a
+    Position: {x: 2143, y: 1134}
+    Operator: 0
+  - NodeGUID: c5826cdc-2d5b-4542-8c30-bf04d0ac9361
+    Position: {x: 1123, y: 3251}
+    Operator: 0
+  - NodeGUID: 15234e92-9b89-44fc-92bb-41a2d0d6c5d2
+    Position: {x: 1774, y: 3250}
+    Operator: 0
+  - NodeGUID: 2b88a6d6-91fb-4217-bbf2-8298cb927f0e
+    Position: {x: 1749, y: 2052}
+    Operator: 1
+  - NodeGUID: 41dc7370-2070-4907-b4ab-999cabed878c
+    Position: {x: 2374, y: 2052}
+    Operator: 0
+  - NodeGUID: 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+    Position: {x: 1044, y: 15}
+    Operator: 0
+  - NodeGUID: 32871025-298b-4f83-98fa-32afee47b379
+    Position: {x: 1081, y: 1542}
+    Operator: 0
+  - NodeGUID: 0edb5a9a-e8f9-4788-8929-8e4a871d0485
+    Position: {x: 2373, y: 1669}
+    Operator: 0
+  - NodeGUID: 57f10fdf-2f9f-4f41-a330-a235f1e898bb
+    Position: {x: 1749, y: 2429}
+    Operator: 1
+  - NodeGUID: 276813aa-9964-4a59-8070-15bc2f2da09c
+    Position: {x: 1749, y: 1669}
+    Operator: 0
+  ConditionNodeData:
+  - NodeGUID: 0cc1caf6-b5b0-4bfc-b9fa-e4b0adc4f285
+    Position: {x: 830, y: -213}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 2
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: fac72d02-1aca-4a5f-9b31-6a58bde28870
+    Position: {x: 827, y: -370}
+    Condition:
+      TriggerMovement:
+        LeftToe: 4
+        LeftHeel: 15
+        RightToe: 11
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: fcf6bc24-4b3d-45b3-985f-99a08a32cb74
+    Position: {x: 830, y: 15}
+    Condition:
+      TriggerMovement:
+        LeftToe: 11
+        LeftHeel: 15
+        RightToe: 4
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: b38a9577-e02a-4816-8d10-dba20b5a94cf
+    Position: {x: 830, y: 349}
+    Condition:
+      TriggerMovement:
+        LeftToe: -1
+        LeftHeel: 11
+        RightToe: -1
+        RightHeel: 4
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 8a02e58a-9331-417d-bfa7-5e2b79be7087
+    Position: {x: 830, y: 506}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 1
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 1943af09-9b8a-447f-a09f-71851a067b79
+    Position: {x: 827, y: 669}
+    Condition:
+      TriggerMovement:
+        LeftToe: -1
+        LeftHeel: 4
+        RightToe: -1
+        RightHeel: 11
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 2add0472-79c3-4f29-bc55-2975db7b1cd4
+    Position: {x: 827, y: 837}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 3
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: d3eeeaa1-17c7-41a7-a62a-311f59e37127
+    Position: {x: 830, y: 177}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: f5093f18-3df5-49d2-9ede-a0accb885abc
+    Position: {x: 1933, y: -330}
+    Condition:
+      TriggerMovement:
+        LeftToe: 11
+        LeftHeel: 15
+        RightToe: 11
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.8
+      _currentDuration: 0
+  - NodeGUID: 079b3ab0-f046-4b80-a1a7-453ea8af2cc3
+    Position: {x: 1933, y: -86}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 11
+        RightToe: 15
+        RightHeel: 11
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.8
+      _currentDuration: 0
+  - NodeGUID: c9736a25-c64d-4bbc-99a5-4f7c4a657715
+    Position: {x: 1933, y: 291}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 44e534e6-0966-4ce2-ba4b-5c28b75d2ed7
+    Position: {x: 1933, y: 134}
+    Condition:
+      TriggerMovement:
+        LeftToe: 4
+        LeftHeel: 15
+        RightToe: 11
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: c99331ee-7e84-40ec-b296-bd08db6bc28a
+    Position: {x: 1933, y: 448}
+    Condition:
+      TriggerMovement:
+        LeftToe: 11
+        LeftHeel: 15
+        RightToe: 4
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 4553508c-392d-4f44-8af5-c6a77742df52
+    Position: {x: 1933, y: 629}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 2
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: b4876f7b-91e0-4350-9036-b37223d7c2f8
+    Position: {x: 1933, y: 787}
+    Condition:
+      TriggerMovement:
+        LeftToe: -1
+        LeftHeel: 4
+        RightToe: -1
+        RightHeel: 11
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: d0750d48-9565-422a-9ec6-4d26cedf5c7b
+    Position: {x: 1933, y: 956}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 1
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: ddf80db7-19c9-4a91-a32c-8cc3b9fab7b9
+    Position: {x: 1933, y: 1134}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 1
+      Device: 3
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: fdb3dfe2-b618-4bcd-945b-72eade930b7d
+    Position: {x: 1933, y: 1288}
+    Condition:
+      TriggerMovement:
+        LeftToe: -1
+        LeftHeel: 11
+        RightToe: -1
+        RightHeel: 4
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: bd43a593-6d32-4c3a-a01f-24cc5d0cdb5f
+    Position: {x: 1675, y: 3372}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 589c83b9-0d57-4daa-a5fd-8a450bfdcc93
+    Position: {x: 2275, y: 2174}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 6b05ed07-e33e-4245-b4fb-f94b50079be7
+    Position: {x: 1506, y: 2174}
+    Condition:
+      TriggerMovement:
+        LeftToe: 2
+        LeftHeel: 2
+        RightToe: 2
+        RightHeel: 2
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.2
+      _currentDuration: 0
+  - NodeGUID: a365a471-3769-4c35-ac4f-2668bf326c5e
+    Position: {x: 829, y: 1669}
+    Condition:
+      TriggerMovement:
+        LeftToe: 2
+        LeftHeel: 2
+        RightToe: 2
+        RightHeel: 2
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.2
+      _currentDuration: 0
+  - NodeGUID: 3e7a53eb-4f1b-40e6-b0fa-1db7831a3426
+    Position: {x: 1506, y: 1786}
+    Condition:
+      TriggerMovement:
+        LeftToe: 1
+        LeftHeel: 1
+        RightToe: 1
+        RightHeel: 1
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.15
+      _currentDuration: 0
+  - NodeGUID: 15f5ce9b-812b-495a-9e58-1b035b7b038e
+    Position: {x: 2274, y: 1791}
+    Condition:
+      TriggerMovement:
+        LeftToe: 15
+        LeftHeel: 15
+        RightToe: 15
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0
+      _currentDuration: 0
+  - NodeGUID: 033f3226-ec72-4d0f-b6f2-843af5320a89
+    Position: {x: 1506, y: 2550}
+    Condition:
+      TriggerMovement:
+        LeftToe: 1
+        LeftHeel: 1
+        RightToe: 2
+        RightHeel: 2
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.2
+      _currentDuration: 0
+  - NodeGUID: bfcac869-b514-4ba8-93d2-0f8466127146
+    Position: {x: 1506, y: 2743}
+    Condition:
+      TriggerMovement:
+        LeftToe: 2
+        LeftHeel: 2
+        RightToe: 1
+        RightHeel: 1
+      LastDeviceState: 0
+      Device: 0
+      Duration: 0.2
+      _currentDuration: 0
+  - NodeGUID: 6b03be95-4dad-442c-8122-d0d8ec7de8d9
+    Position: {x: 854, y: 3385}
+    Condition:
+      TriggerMovement:
+        LeftToe: 1
+        LeftHeel: 15
+        RightToe: 1
+        RightHeel: 15
+      LastDeviceState: 0
+      Device: 0
+      Duration: 1
+      _currentDuration: 0
+  GroupDatas:
+  - ChildNodes:
+    - 2b8b715f-9eb0-40fe-a52e-ea9216d942cb
+    - c9b674ec-f3b2-4ae6-a0fe-ac3479164661
+    - 0cc1caf6-b5b0-4bfc-b9fa-e4b0adc4f285
+    - fac72d02-1aca-4a5f-9b31-6a58bde28870
+    - fcf6bc24-4b3d-45b3-985f-99a08a32cb74
+    - b38a9577-e02a-4816-8d10-dba20b5a94cf
+    - 8a02e58a-9331-417d-bfa7-5e2b79be7087
+    - 1943af09-9b8a-447f-a09f-71851a067b79
+    - 2add0472-79c3-4f29-bc55-2975db7b1cd4
+    - d3eeeaa1-17c7-41a7-a62a-311f59e37127
+    - f5093f18-3df5-49d2-9ede-a0accb885abc
+    - 079b3ab0-f046-4b80-a1a7-453ea8af2cc3
+    - c9736a25-c64d-4bbc-99a5-4f7c4a657715
+    - 44e534e6-0966-4ce2-ba4b-5c28b75d2ed7
+    - c99331ee-7e84-40ec-b296-bd08db6bc28a
+    - 4553508c-392d-4f44-8af5-c6a77742df52
+    - b4876f7b-91e0-4350-9036-b37223d7c2f8
+    - d0750d48-9565-422a-9ec6-4d26cedf5c7b
+    - ddf80db7-19c9-4a91-a32c-8cc3b9fab7b9
+    - fdb3dfe2-b618-4bcd-945b-72eade930b7d
+    - 2f83ce10-9758-4386-8c16-0d5b52518726
+    - 34873f3f-3551-4669-9a21-af7186f3d39f
+    - f3772e78-e584-436c-8ee6-9e6be5a1a6c9
+    - 976d09ab-45e7-4aa4-bad3-fae73cefd8b6
+    - 43425238-7666-4367-bb0c-d548f0d64aae
+    - 8a9b3d55-6573-4b07-a5e0-b7c9a6a418fe
+    - 4799c4be-c300-466a-b7ea-ecb471527884
+    - 66f3634a-8bcc-43c8-8eab-0e43317588e5
+    - 95ab522f-3f8a-445b-a989-80b23a398a2a
+    - 4ef8b3d7-e741-4466-8fc2-4c89b4699391
+    Position: {x: 802, y: -429}
+    Title: Forwarding
+  - ChildNodes:
+    - ef54d36d-baff-4844-986f-4a734c6d4ff2
+    - ebfd1fb7-893a-4eaa-8a0f-8a785cbf47cd
+    - bd43a593-6d32-4c3a-a01f-24cc5d0cdb5f
+    - 6b03be95-4dad-442c-8122-d0d8ec7de8d9
+    - c5826cdc-2d5b-4542-8c30-bf04d0ac9361
+    - 15234e92-9b89-44fc-92bb-41a2d0d6c5d2
+    Position: {x: 829, y: 3191}
+    Title: Testing
+  - ChildNodes:
+    - b1e9de47-c2ce-4908-9304-39a39a1a0374
+    - 958e60e2-6054-4073-b5dc-799286d976ca
+    - 570cdaba-1d6e-42f8-8835-2fb1610ad091
+    - a365a471-3769-4c35-ac4f-2668bf326c5e
+    - 3e7a53eb-4f1b-40e6-b0fa-1db7831a3426
+    - 15f5ce9b-812b-495a-9e58-1b035b7b038e
+    - 32871025-298b-4f83-98fa-32afee47b379
+    - 0edb5a9a-e8f9-4788-8929-8e4a871d0485
+    - 276813aa-9964-4a59-8070-15bc2f2da09c
+    Position: {x: 804, y: 1483}
+    Title: Teleport
+  - ChildNodes:
+    - 12c3f577-814e-4741-aecd-164157fa0808
+    - 260984e5-ea27-46c7-844d-c63ff0864b83
+    - 589c83b9-0d57-4daa-a5fd-8a450bfdcc93
+    - 6b05ed07-e33e-4245-b4fb-f94b50079be7
+    - 033f3226-ec72-4d0f-b6f2-843af5320a89
+    - bfcac869-b514-4ba8-93d2-0f8466127146
+    - 2b88a6d6-91fb-4217-bbf2-8298cb927f0e
+    - 41dc7370-2070-4907-b4ab-999cabed878c
+    - 57f10fdf-2f9f-4f41-a330-a235f1e898bb
+    Position: {x: 1481, y: 1993}
+    Title: Jump
+  ExposedProperties: []
